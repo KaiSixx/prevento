@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O mnie – Joanna Szarek | Prevento</title>
+<meta name="description" content="Joanna Szarek, specjalista ds. BHP i PPOŻ z Alwerni. Poznaj Prevento, referencje i zdjęcia z targów.">
+<meta name="theme-color" content="#0b2240">
+<meta property="og:title" content="O mnie – Joanna Szarek | Prevento">
+<meta property="og:description" content="Joanna Szarek, specjalista ds. BHP i PPOŻ z Alwerni. Poznaj Prevento, referencje i zdjęcia z targów.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo_prevento.png">
+<link rel="icon" type="image/png" href="logo_prevento.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-inner="1">
+<div class="progress" id="progress"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="logo-pill" aria-label="Prevento – strona główna"><img src="logo_prevento.png" alt="Prevento Usługi BHP"></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <div class="menu" id="menu">
+      <a href="oferta.html">Oferta</a><a href="narzedzia.html">Narzędzia</a><a href="o-mnie.html" aria-current="page">O mnie</a><a href="faq.html">FAQ</a>
+      <a href="kontakt.html" class="btn btn-primary">Bezpłatna wycena</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Strona główna</a> / O mnie</div>
+    <span class="eyebrow">O mnie</span>
+    <h1>BHP, które ma sens, nie tylko papier.</h1>
+    <p>Poznaj osobę, która zadba o bezpieczeństwo w Twojej firmie.</p>
+  </div>
+</header>
+<section class="about" id="o-mnie">
+  <div class="wrap about-grid">
+    <div class="portrait rv">
+      <!-- Wstaw własne zdjęcie jako joanna.jpg w tym folderze – pojawi się automatycznie -->
+      <img class="photo" src="joanna.jpg" alt="Joanna Szarek – Prevento" onerror="this.remove()">
+      <span class="mono">JS</span>
+      <svg class="clover" viewBox="0 0 100 100" fill="currentColor"><circle cx="35" cy="35" r="22"/><circle cx="65" cy="35" r="22"/><circle cx="35" cy="65" r="22"/><circle cx="65" cy="65" r="22"/></svg>
+      <div class="badge"><b>Joanna Szarek</b><span>Specjalista ds. BHP i PPOŻ · Prevento</span></div>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">Joanna Szarek</span>
+      <h2 class="display" style="font-size:clamp(2rem,4.4vw,3.2rem);font-weight:800;margin:.8rem 0 1.2rem">BHP, które ma sens, nie tylko papier.</h2>
+      <p style="color:#506078;font-size:1.08rem">Prowadzę Prevento z Alwerni. Pomagam firmom spełnić wymagania przepisów, a przede wszystkim sprawić, żeby ludzie wracali z pracy cali i zdrowi. Na co dzień współpracuję z firmami z regionu, bywam też na branżowych targach, jak Prosave w Czeladzi.</p>
+      <div class="quote">„Celem nie jest sama zgodność z przepisami, ale realne podniesienie poziomu bezpieczeństwa w miejscu pracy.”</div>
+      <ul>
+        <li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Jeden stały opiekun</li>
+        <li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Język zrozumiały dla pracowników</li>
+        <li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Dojazd lub szkolenie online</li>
+        <li><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Wycena dopasowana do firmy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="referencje" hidden>
+  <div class="wrap">
+    <div class="sec-head rv" style="margin-inline:auto;text-align:center"><span class="eyebrow">Referencje</span><h2>Zaufali mi.</h2></div>
+    <div class="refs" id="refs"></div>
+  </div>
+</section>
+<section id="galeria" hidden style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">Galeria</span><h2>Z targów i szkoleń.</h2></div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+<div class="lb" id="lb" role="dialog" aria-label="Powiększone zdjęcie"><button aria-label="Zamknij">×</button><div style="text-align:center"><img alt=""><p></p></div></div>
+<div class="band"><div class="wrap"><div class="band-in rv"><div><h2>Zadbaj o bezpieczeństwo już dziś</h2><p>Opisz, czego potrzebujesz. Wrócę z konkretną propozycją i wyceną.</p></div><a class="btn btn-primary" href="kontakt.html">Poproś o wycenę</a></div></div></div>
+
+
+<footer>
+  <div class="wrap foot">
+    <div class="logo-pill"><img src="logo_prevento.png" alt="Prevento"></div>
+    <nav aria-label="Stopka"><a href="oferta.html">Oferta</a><a href="narzedzia.html">Narzędzia</a><a href="o-mnie.html">O mnie</a><a href="faq.html">FAQ</a><a href="kontakt.html">Kontakt</a></nav>
+    <p>&copy; <span id="yr">2026</span> Prevento Usługi BHP – Joanna Szarek · Alwernia</p>
+  </div>
+</footer>
+
+<a href="tel:+48505013997" class="fab" aria-label="Zadzwoń do Prevento"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21l-2.26 1.13a11 11 0 005.52 5.52l1.13-2.26a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"/></svg></a>
+
+<script src="app.js"></script>
+</body>
+</html>

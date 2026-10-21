@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narzędzia – kalkulator szkoleń i ocena ryzyka | Prevento</title>
+<meta name="description" content="Sprawdź termin szkolenia okresowego BHP i wykonaj szybką wstępną ocenę ryzyka na stanowisku pracy.">
+<meta name="theme-color" content="#0b2240">
+<meta property="og:title" content="Narzędzia – kalkulator szkoleń i ocena ryzyka | Prevento">
+<meta property="og:description" content="Sprawdź termin szkolenia okresowego BHP i wykonaj szybką wstępną ocenę ryzyka na stanowisku pracy.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo_prevento.png">
+<link rel="icon" type="image/png" href="logo_prevento.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-inner="1">
+<div class="progress" id="progress"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="logo-pill" aria-label="Prevento – strona główna"><img src="logo_prevento.png" alt="Prevento Usługi BHP"></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <div class="menu" id="menu">
+      <a href="oferta.html">Oferta</a><a href="narzedzia.html" aria-current="page">Narzędzia</a><a href="o-mnie.html">O mnie</a><a href="faq.html">FAQ</a>
+      <a href="kontakt.html" class="btn btn-primary">Bezpłatna wycena</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Strona główna</a> / Narzędzia</div>
+    <span class="eyebrow">Sprawdź sam</span>
+    <h1>Szybkie narzędzia dla pracodawcy.</h1>
+    <p>Dwa kalkulatory pokazujące, jak wygląda BHP w praktyce. Wyniki są orientacyjne, dokładną analizę robię indywidualnie.</p>
+  </div>
+</header>
+<section class="tools" id="narzedzia">
+  <div class="wrap" style="position:relative">
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-p="p1">Termin szkolenia okresowego</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p2">Szybka ocena ryzyka</button>
+    </div>
+
+    <div class="panel on" id="p1" role="tabpanel">
+      <div>
+        <h3>Kiedy wygasa szkolenie?</h3>
+        <p class="hint">Wybierz grupę pracowniczą i datę ostatniego szkolenia.</p>
+        <div class="field"><label for="grp">Grupa pracownicza</label>
+          <select id="grp">
+            <option value="6">Administracyjno-biurowe</option>
+            <option value="3" selected>Robotnicze</option>
+            <option value="1">Robotnicze – prace szczególnie niebezpieczne</option>
+            <option value="5">Inżynieryjno-techniczne i służba BHP</option>
+            <option value="5b">Pracodawca i kierujący pracownikami</option>
+          </select></div>
+        <div class="field"><label for="last">Data ostatniego szkolenia</label>
+          <input type="date" id="last" style="width:100%;padding:.9rem 1rem;border-radius:14px;border:1.5px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit;color-scheme:dark"></div>
+      </div>
+      <div class="result" id="r1" aria-live="polite"></div>
+    </div>
+
+    <div class="panel" id="p2" role="tabpanel">
+      <div>
+        <h3>Macierz ryzyka</h3>
+        <p class="hint">Oceń zagrożenie na stanowisku w skali 1–5.</p>
+        <div class="field"><label for="prob">Prawdopodobieństwo zdarzenia <b id="pv">3</b></label><input type="range" id="prob" min="1" max="5" value="3"></div>
+        <div class="field"><label for="sev">Ciężkość skutków <b id="sv">3</b></label><input type="range" id="sev" min="1" max="5" value="3"></div>
+        <div class="field"><label for="exp">Częstość narażenia <b id="ev">3</b></label><input type="range" id="exp" min="1" max="5" value="3"></div>
+      </div>
+      <div class="result" id="r2" aria-live="polite"></div>
+    </div>
+    <p class="disc">Terminy wg rozporządzenia w sprawie szkoleń BHP, wartości orientacyjne. Ostateczne ustalenia zależą od stanowiska i przepisów obowiązujących w dniu szkolenia.</p>
+  </div>
+</section><div class="band"><div class="wrap"><div class="band-in rv"><div><h2>Zadbaj o bezpieczeństwo już dziś</h2><p>Opisz, czego potrzebujesz. Wrócę z konkretną propozycją i wyceną.</p></div><a class="btn btn-primary" href="kontakt.html">Poproś o wycenę</a></div></div></div>
+
+
+<footer>
+  <div class="wrap foot">
+    <div class="logo-pill"><img src="logo_prevento.png" alt="Prevento"></div>
+    <nav aria-label="Stopka"><a href="oferta.html">Oferta</a><a href="narzedzia.html">Narzędzia</a><a href="o-mnie.html">O mnie</a><a href="faq.html">FAQ</a><a href="kontakt.html">Kontakt</a></nav>
+    <p>&copy; <span id="yr">2026</span> Prevento Usługi BHP – Joanna Szarek · Alwernia</p>
+  </div>
+</footer>
+
+<a href="tel:+48505013997" class="fab" aria-label="Zadzwoń do Prevento"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21l-2.26 1.13a11 11 0 005.52 5.52l1.13-2.26a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"/></svg></a>
+
+<script src="app.js"></script>
+</body>
+</html>
