@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kaisixx.github.io/prevento/sitemap.xml
